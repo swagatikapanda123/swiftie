@@ -1,12 +1,11 @@
 .topnav {
   overflow: hidden;
-  background-image: linear-gradient(90deg,pink,purple);
 }
 
 .topnav a {
   float: left;
   color: #f2f2f2;
-  color: black;
+  color: white;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -14,12 +13,15 @@
 }
 
 .topnav a:hover {
-  color: blue;
+  color: orange;
 }
 
 .topnav a.active {
   background-color: #4CAF50;
   color: white;
+}
+iframe{
+  align-self: center;
 }
 section{
   padding: 5px;
@@ -28,15 +30,11 @@ section{
   border-radius : 6px;
   color: white;
   padding: 32px;
-  max-width: 1600px;
-  min-width: 500px;
 }
 footer{
   background-color: #eee;
   text-align: left;
   padding: 10px;
-  max-width: 1600px;
-  min-width: 100px;
 }/* Dropdown Button */
 .dropbtn {
     background-color: black;
