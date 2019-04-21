@@ -21,20 +21,17 @@
 <section>
     
 
-	<img src="tay7.jpg" style="width: 300px; height:250px;  display: block;margin-left: auto;margin-right: auto;">
+	<img src="tp.jpg" style="width: 500px; height:450px;  display: block;margin-left: auto;margin-right: auto;">
 	<h1 style="text-align: center;"> <b>TAYLOR ALISON SWIFT</b></h1>
 	<p style="text-align: center;">Explore all songs of Taylor..</p>
 	<p style="text-align: center;">******************************</p>
   
    <br>
-   <p>Taylor is very hilarious and loves to have fun with everyone.This video will make you fall in love with her.</p>
-   <iframe  src="https://www.youtube.com/embed/sm3-TIRZuco" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-   <P>73 Questions with Vogue.</P>
-   <iframe  src="https://www.youtube.com/embed/XnbCSboujF4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-   <p>Fun time With best friend Selena Gomez. </p>
-   <iframe src="https://www.youtube.com/embed/tY3GZMZVVL0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-   <p>Taylor loves her cat Olivia.</p>
-   <iframe  src="https://www.youtube.com/embed/-mGRcnfjtlM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+   <p>Taylor Swift's cats live a pretty lavish life. While Taylor is pretty famous, her two Scottish fold cats, Olivia Benson and Meredith Grey,are pretty famous as well.</p>
+   <p>Here is a look at Tay's cat..</p>
+   <img src="tc.webp" style="width: 200px; height:250px;"><br><br>
+   <iframe  src="https://www.youtube.com/embed/-mGRcnfjtlM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen controls></iframe>
   <!-- Slideshow container -->
   <br>
   <h3 style="text-align: center;">GALLERY</h3>
@@ -221,10 +218,12 @@
   <div class="w3-light-grey w3-padding-large w3-padding-10 w3-margin-top" id="contact">
     <h3 class="w3-center">Contact</h3>
     <hr>
-    <p>Send a message here...</p>
+    <h4 id="demo"></h4>
 
-    <form action="/action_page.php" target="_blank">
+    <form id="myform">
       <div class="w3-section">
+        <p>Send a message here...</p>
+
         <label>Name</label>
         <input class="w3-input w3-border" type="text" required name="Name">
       </div>
@@ -236,7 +235,7 @@
         <label>Message</label>
         <input class="w3-input w3-border" required name="Message">
       </div>
-      <button type="submit" class="w3-button w3-block w3-dark-grey">Send</button>
+      <button class="w3-button w3-block w3-dark-grey" onclick="show();">Send</button>
     </form><br>
 </section>
     <footer>
@@ -251,6 +250,15 @@
 
 
 <script>
+  function show(){
+    document.getElementById('demo').innerHTML='Thank You!!';
+    var x = document.getElementById("myform");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+ }
   
   var slideIndex = 1;
 showSlides(slideIndex);
