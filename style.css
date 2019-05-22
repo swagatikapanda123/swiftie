@@ -1,5 +1,9 @@
 .topnav {
-  overflow: hidden;
+  overflow:visible;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: black;
 }
 
 .topnav a {
@@ -11,6 +15,9 @@
   text-decoration: none;
   font-size: 17px;
 }
+
+
+
 
 .topnav a:hover {
   color: orange;
@@ -101,6 +108,7 @@ footer{
 .slideshow-container {
   max-width: 1000px;
   position: relative;
+  display: hidden;
   margin: auto;
 }
 
@@ -159,8 +167,8 @@ footer{
 /* The dots/bullets/indicators */
 .dot {
   cursor: pointer;
-  height: 15px;
-  width: 15px;
+  height: 10px;
+  width: 10px;
   margin: 0 2px;
   background-color: #bbb;
   border-radius: 50%;
@@ -169,7 +177,7 @@ footer{
 }
 
 .active, .dot:hover {
-  background-color: #717171;
+  background-color: #111111;
 }
 
 /* Fading animation */
@@ -188,4 +196,17 @@ footer{
 @keyframes fade {
   from {opacity: .4} 
   to {opacity: 1}
+}
+div.controls:hover {
+  color: blue;
+}
+div.controls label{
+  display: inline-block;
+  text-align: center;
+  width: 50px;
+}
+div.controls label,div.controls input, output {
+  vertical-align: middle;
+  padding: 0;
+  margin: 0;
 }
